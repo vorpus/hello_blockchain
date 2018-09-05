@@ -1,9 +1,61 @@
 <html>
   <head>
-    <title></title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Blockbasics</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
   </head>
   <body>
+    <div class='container'>
+      <div class='row'>
+        <h1>Hashing</h1>
+      </div>
+      <div class='row'>
+        <form class='form-horizontal'>
+          <div class='form-group'>
+            <label
+              for="nonce-1-label"
+              class="col-sm-2 col-xs-2 control-label"
+            >Block:</label>
+            <div class="col-sm-10 col-xs-10">
+              <input id="block-number-1" class='form-control' cols="30" rows="10" value="1"></input>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label
+              for="nonce-1-label"
+              class="col-sm-2 col-xs-2 control-label"
+            >Nonce:</label>
+            <div class="col-sm-10 col-xs-10">
+              <input id="nonce-1" class='form-control' cols="30" rows="10" value="1"></input>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label for="data-1" class='col-sm-2 col-xs-2 control-label'>Data</label>
+            <div class='col-sm-10 col-xs-10'>
+              <textarea
+                id='data-1'
+                class='form-control'
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label
+              for="hashed-1"
+              class='col-sm-2 col-xs-2 control-label'
+            >Hash</label>
+            <div class='col-sm-8 col-xs-8'>
+              <input type="text" class='form-control' id='hashed-1' disabled>
+            </div>
+            <div class='col-sm-2 col-xs-2'>
+              <button
+                class='btn btn-primary'
+                id='hash-button-1'
+              >Hash</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="dist/bundle.js"></script>
   </body>
 </html>
